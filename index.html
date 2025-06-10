@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./test.js"></script> -->
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="./test.js"></script>
-</head>
+  <body>
+    <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
+      <img
+        src="https://p3.ssl.qhimg.com/dmt/64_64_/t01982b0cd588b0611a.png"
+        alt=""
+        width="80px"
+        height="80px"
+      />
+    </div>
+    <div
+      style="
+        max-width: 700px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 15px;
+        line-height: 1.7;
+        color: aqua;
+      "
+    >
+      <p style="color: red">我的第一网站</p>
+      <p>几分钟做出来</p>
+      <p>真的很开心</p>
+      <p>我会继续努力的</p>
+      <p style="color: blue">成为一个编程高手</p>
+    </div>
+    <div
+      style="
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+      "
+    >
+      <p>我的网站</p>
+      <a href="https://www.baidu.com">友情链接</a>
+      <br />
+      <!-- <script>alert('在页面写js')</script> -->
+      <!-- <script src="./test.js"></script> -->
+      <script>
+        // 文档输出内容
+        document.write("我是文档输出内容");
+        document.write("<br />");
+        document.write("<h1>我是加了标签的文档输出内容</h1>");
+        // 控制台输出内容
+        console.log("我是控制台输出内容");
+        // 输入语句
+        let name = prompt("请输入您的姓名");
+        let age = prompt("请输入您的年龄");
+        let gender = prompt("请输入您的性别");
+        // 使用模板字符串，将 name 变量嵌入 <h3> 标签中输出
+        // 将 h2 块级标签替换为 span 行内标签，确保内容在同一行显示
+        document.write(
+          `您的名字是：<span style="font-size: 1.5em; font-weight: bold;">${name}</span><br>您的年龄是：<span style="font-size: 1.5em; font-weight: bold;">${age}</span><br> 您的性别是：<span style="font-size: 1.5em; font-weight: bold;">${gender}</span>`
+        );
 
-<body>
-  <div style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 40px;
-  ">
-    <img src="https://p3.ssl.qhimg.com/dmt/64_64_/t01982b0cd588b0611a.png" alt="" width="80px" height="80px">
-  </div>
-  <div style="
-    max-width:700px;
-    margin:30px auto;
-    text-align: center;
-    padding:15px;
-    line-height:1.7;
-    color:aqua;">
-    <p style="color:red">我的第一网站</p>
-    <p>几分钟做出来</p>
-    <p>真的很开心</p>
-    <p>我会继续努力的</p>
-    <p style="color:blue">成为一个编程高手</p>
-  </div>
-  <div style="
-    background-color: #f1f1f1;
-    text-align: center;
-    padding:40px;
-    font-size: 12px;">
-    <p>我的网站</p>
-    <a href="https://www.baidu.com">友情链接</a>
-  </div>
-</body>
-
+        // 数组
+        let data = [
+          "星期一",
+          "星期二",
+          "星期三",
+          "星期四",
+          "星期五",
+          "星期六",
+          "星期日",
+        ];
+        console.log(data[6]);
+      </script>
+    </div>
+  </body>
 </html>
